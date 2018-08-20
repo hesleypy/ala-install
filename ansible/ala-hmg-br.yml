@@ -1,0 +1,34 @@
+- hosts: sibbr-cassandra
+  tags: sibbr-cassandra
+  roles:
+    - java
+    - cassandra3
+    - { role: biocache-db, use_cassandra3 : true }
+  become: yes
+#--------
+- hosts: sibbr-portal
+  tags: sibbr-portal
+  roles:
+    - common
+    - java
+    - tomcat
+    # - cassandra3
+    - mysql-5.7
+    - postgresql
+    - webserver
+    - nameindex
+    - solr6
+    - logger-client
+    - biocache-properties
+    # - { role: biocache-db,      use_cassandra3 : true }
+    - { role: biocache-service, biocache_service_version: "2.1.7" }
+    - { role: biocache-hub,     biocache_hub: ala-hub, biocache_hub_version: "3.0.6" }
+    - { role: collectory,       collectory_app: ala-collectory, collectory_version: "1.5.4" }
+    - { role: biocache-cli,     biocache_cli_version: "2.3.6" }
+    - { role: nameindexer,      ala_name_matching_version: "3.1" }
+    - { role: logger-service,   logger_version: "2.3.5" }
+    - { role: species-list,     specieslist_version: "3.0" }
+    - { role: bie-index,        bie_index_version: "1.4.2.2" }
+    - { role: bie-hub,          bie_hub: ala-bie, bie_hub_version: "1.4.2" }
+    - { role: image-service,    images_version: "0.9" }
+    - demo
