@@ -13,14 +13,18 @@
 ########################################################################################################################
 
 [ala-demo]
-living-atlas.org
+#living-atlas.org
+ala.sibbr.rnp.br
 
 [ala-demo:vars]
 # Mounted storage is usually /mnt on EC2. Create a symlink to /mnt -> /data
 data_dir=/data
 
-demo_hostname = living-atlas.org
-skin_home_url = http://living-atlas.org
+#demo_hostname = living-atlas.org
+demo_hostname = ala.sibbr.rnp.br
+
+#skin_home_url = http://living-atlas.org
+skin_home_url = http://ala.sibbr.rnp.br
 
 ############# GBIF Name matching index
 
@@ -30,31 +34,41 @@ name_index_dir=/data/lucene/namematching/namematching
 
 ####################### Biocache ##############################################
 
-biocache_db_host = localhost
+#biocache_db_host = localhost
+biocache_db_host = 138.121.70.52
 biocache_db_type = cassandra3
 biocache_db_port = 9042
-cassandra_listen_host = localhost
-biocache_service_hostname = living-atlas.org
-biocache_service_url = http://living-atlas.org/biocache-service
-biocache_service_base_url = http://living-atlas.org
+#cassandra_listen_host = localhost
+cassandra_listen_host = 138.121.70.52
+#biocache_service_hostname = living-atlas.org
+biocache_service_hostname = ala.sibbr.rnp.br
+#biocache_service_url = http://living-atlas.org/biocache-service
+biocache_service_url = http://ala.sibbr.rnp.br/biocache-service
+#biocache_service_base_url = http://living-atlas.org
+biocache_service_base_url = http://ala.sibbr.rnp.br
 biocache_service_context_path = /biocache-service
 logging_enabled = true
 default_country =
 layers_service_url =
 layers_service_sampling = false
 enable_lists = true
-lists_service_url = http://living-atlas.org/specieslists
+#lists_service_url = http://living-atlas.org/specieslists
+lists_service_url = http://ala.sibbr.rnp.br/specieslists
 registry_api_key = dummy-registry-api-key
 commonname_lang = en
 media_store_local = false
-media_store_url=http://living-atlas.org/images
+#media_store_url=http://living-atlas.org/images
+media_store_url = http://ala.sibbr.rnp.br/images
 download_dir=/data/biocache-download
 
 ####################### Hub ###################################################
 
-biocache_hub_hostname = living-atlas.org
-biocache_hub_url = http://living-atlas.org/ala-hub
-biocache_hub_base_url = http://living-atlas.org
+#biocache_hub_hostname = living-atlas.org
+biocache_hub_hostname = ala.sibbr.rnp.br
+#biocache_hub_url = http://living-atlas.org/ala-hub
+biocache_hub_url = http://ala.sibbr.rnp.br/ala-hub
+#biocache_hub_base_url = http://living-atlas.org
+biocache_hub_base_url = http://ala.sibbr.rnp.br
 biocache_hub_context_path = /ala-hub
 userdetails_url = https://auth.ala.org.au/userdetails/userDetails
 
@@ -63,7 +77,8 @@ google_apikey = AIzaSyAJDtEeoy7Sc9pij2TAoVnmTwA34Q-2VHk
 # this is disabled to avoid startup problems
 caches_collections_enabled = false
 
-org_url = http://living-atlas.org
+#org_url = http://living-atlas.org
+org_url = http://ala.sibbr.rnp.br
 
 skin_orgNameLong = Living Atlas Demo
 orgNameLong = Living Atlas Demo
@@ -81,15 +96,21 @@ skin_layout = generic
 skin_fluid_layout = true
 
 use_ala_image_service = true
-image_service_url = http://living-atlas.org/images
-image_service_viewer_url = http://living-atlas.org/images/image/viewer?imageId=
-image_service_metadata_url = http://living-atlas.org/images/image/details?imageId=
+#image_service_url = http://living-atlas.org/images
+image_service_url = http://ala.sibbr.rnp.br/images
+#image_service_viewer_url = http://living-atlas.org/images/image/viewer?imageId=
+image_service_viewer_url = http://ala.sibbr.rnp.br/images/image/viewer?imageId=
+#image_service_metadata_url = http://living-atlas.org/images/image/details?imageId=
+image_service_metadata_url = http://ala.sibbr.rnp.br/images/image/details?imageId=
 alwaysshow_imagetab = true
 
 use_download_plugin=true
-downloads_indexed_download_url=http://living-atlas.org/biocache-service/occurrences/offline/download
-downloads_checklist_download_url=http://living-atlas.org/biocache-service/occurrences/facets/download
-downloads_indexed_fields_url=http://living-atlas.org/biocache-service/index/fields
+#downloads_indexed_download_url=http://living-atlas.org/biocache-service/occurrences/offline/download
+downloads_indexed_download_url=http://ala.sibbr.rnp.br/biocache-service/occurrences/offline/download
+#downloads_checklist_download_url=http://living-atlas.org/biocache-service/occurrences/facets/download
+downloads_checklist_download_url=http://ala.sibbr.rnp.br/biocache-service/occurrences/facets/download
+#downloads_indexed_fields_url=http://living-atlas.org/biocache-service/index/fields
+downloads_indexed_fields_url=http://ala.sibbr.rnp.br/biocache-servide/index/fields
 downloads_fieldguide_download_url =
 downloads_static_downloads_url =
 downloads_terms_of_use =
@@ -97,10 +118,14 @@ download_solr_only = true
 
 ####################### Collectory ############################################
 
-collectory_hostname = living-atlas.org
-collectory_url = http://living-atlas.org/collectory
-collectory_service_url = http://living-atlas.org/collectory/ws
-collectory_base_url = http://living-atlas.org
+#collectory_hostname = living-atlas.org
+collectory_hostname = ala.sibbr.rnp.br
+#collectory_url = http://living-atlas.org/collectory
+collectory_url = http://ala.sibbr.rnp.br/collectory
+#collectory_service_url = http://living-atlas.org/collectory/ws
+collectory_service_url = http://ala.sibbr.rnp.br/collectory/ws
+#collectory_base_url = http://living-atlas.org
+collectory_base_url = http://ala.sibbr.rnp.br
 collectory_context_path = /collectory
 collectory_db_host_address = localhost
 collectory_db_host = localhost
@@ -158,32 +183,44 @@ api_key_check_enabled = false
 gbifApiUrl = http://api.gbif.org/v1
 
 # Logger URL
-logger_webservice_url = http://living-atlas.org/logger-service/service
+#logger_webservice_url = http://living-atlas.org/logger-service/service
+logger_webservice_url = http://ala.sibbr.rnp.br/logger-service/service
 
 # Species list tool
-species_list_tool_url = http://living-atlas.org/specieslists
+#species_list_tool_url = http://living-atlas.org/specieslists
+species_list_tool_url = http://ala.sibbr.rnp.br/specieslists
 
 ####################### SOLR #######################
 
-solr_hostname = living-atlas.org
-solr_url = http://living-atlas.org:8983/solr/biocache
-solr_base_url = http://living-atlas.org:8983
+#solr_hostname = living-atlas.org
+solr_hostname = ala.sibbr.rnp.br
+#solr_url = http://living-atlas.org:8983/solr/biocache
+solr_url = http://ala.sibbr.rnp.br:8983/solr/biocache
+#solr_base_url = http://living-atlas.org:8983
+solr_base_url = http://ala.sibbr.rnp.br:8983
 solr_context_path = /solr
-solr_host = living-atlas.org
+#solr_host = living-atlas.org
+solr_host = ala.sibbr.rnp.br
 solr_port = 8983
 
 solr_heap = 8g
 
-sandbox_hostname = living-atlas.org
-sandbox_url = http://living-atlas.org/sandbox
-sandbox_base_url = http://living-atlas.org
+#sandbox_hostname = living-atlas.org
+sandbox_hostname = ala.sibbr.rnp.br
+#sandbox_url = http://living-atlas.org/sandbox
+sandbox_url = http://ala.sibbr.rnp.br/sandbox
+#sandbox_base_url = http://living-atlas.org
+sandbox_base_url = http://ala.sibbr.rnp.br
 sandbox_context_path = /sandbox
 
 ################# Logger Service ############
 
-logger_hostname = living-atlas.org
-logger_url = http://living-atlas.org/logger-service
-logger_base_url = http://living-atlas.org
+#logger_hostname = living-atlas.org
+logger_hostname = ala.sibbr.rnp.br
+#logger_url = http://living-atlas.org/logger-service
+logger_url = http://ala.sibbr.rnp.br/logger-service
+#logger_base_url = http://living-atlas.org
+logger_base_url = http://ala.sibbr.rnp.br
 logger_context_path = /logger-service
 logger_db_name = logger
 logger_db_username = logger_user
@@ -208,37 +245,46 @@ sds_enabled = false
 biocache_opts = -Xmx1g -Xms1g
 
 ############## Base header / footer ###############
-header_and_footer_baseurl = http://living-atlas.org
+#header_and_footer_baseurl = http://living-atlas.org
+header_and_footer_baseurl = http://ala.sibbr.rnp.br
 
 ###### favicon #######
 skin_favicon = https://www.gbif.org/favicon-16x16.png
 
 ######### Species list ##############
 
-specieslist_hostname = living-atlas.org
+#specieslist_hostname = living-atlas.org
+specieslist_hostname = ala.sibbr.rnp.br
+#specieslist_url = http://living-atlas.org/specieslists
 specieslist_url = http://living-atlas.org/specieslists
-specieslist_base_url = http://living-atlas.org
+#specieslist_base_url = http://living-atlas.org
+specieslist_base_url = http://ala.sibbr.rnp.br
 specieslist_context_path = /specieslists
 specieslist_db_hostname = localhost
 specieslist_db_name = specieslists
 specieslist_db_username = specieslists
 specieslist_db_password = password
 collectory_enable_sync = false
-biocache_base_url = http://living-atlas.org/ala-hub
-bie_service_base_url = http://living-atlas.org/bie-index
+#biocache_base_url = http://living-atlas.org/ala-hub
+biocache_base_url = http://ala.sibbr.rnp.br/ala-hub
+#bie_service_base_url = http://living-atlas.org/bie-index
+bie_service_base_url = http://ala.sibbr.rnp.br/bie-index
 field_guide_base_url =
 
 ############# BIE index ################
 
-bie_index_base_url = http://living-atlas.org
+#bie_index_base_url = http://living-atlas.org
+bie_index_base_url = http://ala.sibbr.rnp.br
 bie_index_context_path = /bie-index
-bie_index_hostname = living-atlas.org
+#bie_index_hostname = living-atlas.org
+bie_index_hostname = ala.sibbr.rnp.br
 
 index_live_url = http://localhost:8983/solr/bie
 index_offline_url = http://localhost:8983/solr/bie-offline
 
 biocache_solr_url = http://localhost:8983/solr/biocache
-collectory_url = http://living-atlas.org/collectory
+#collectory_url = http://living-atlas.org/collectory
+collectory_url = http://ala.sibbr.rnp.br/collectory
 
 disable_cas = true
 bypass_cas = true
@@ -249,22 +295,30 @@ index_images = true
 
 bie_skin_layout = generic
 bie_hub = ala-bie
-bie_hub_base_url = http://living-atlas.org
+#bie_hub_base_url = http://living-atlas.org
+bie_hub_base_url = http://ala.sibbr.rnp.br
 bie_hub_context_path = /ala-bie
-bie_hub_hostname = living-atlas.org
-species_list_url = http://living-atlas.org/specieslists
+#bie_hub_hostname = living-atlas.org
+bie_hub_hostname = ala.sibbr.rnp.br
+#species_list_url = http://living-atlas.org/specieslists
+species_list_url = http://ala.sibbr.rnp.br/specieslists
 sightings_url =
 alerts_url =
 spatial_url =
 
+#bie_base_url = http://living-atlas.org/ala-bie
 bie_base_url = http://living-atlas.org/ala-bie
-ala_base_url = http://living-atlas.org
+#ala_base_url = http://living-atlas.org
+ala_base_url = http://ala.sibbr.rnp.br
 
 ####### Images #######
 
-images_url = http://living-atlas.org
-images_base_url = http://living-atlas.org
+#images_url = http://living-atlas.org
+images_url = http://ala.sibbr.rnp.br
+#images_base_url = http://living-atlas.org
+images_base_url = http://ala.sibbr.rnp.br
 images_context_path = /images
-images_hostname = living-atlas.org
+#images_hostname = living-atlas.org
+images_hostname = ala.sibbr.rnp.br
 images_db_password = images
 images_db_username = images
