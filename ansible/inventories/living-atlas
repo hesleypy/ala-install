@@ -12,11 +12,16 @@
 #
 ########################################################################################################################
 
-[ala-demo]
+#[ala-demo]
 #living-atlas.org
-ala.sibbr.rnp.br
 
-[ala-demo:vars]
+[ala-hmg-br]
+ala.sibbr.rnp.br
+sibbr-cassandra
+
+[ala-hmg-br:vars]
+
+#[ala-demo:vars]
 # Mounted storage is usually /mnt on EC2. Create a symlink to /mnt -> /data
 data_dir=/data
 
