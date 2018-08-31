@@ -5,14 +5,13 @@
     - cassandra3
     - { role: biocache-db, use_cassandra3 : true }
   become: yes
-#--------
+
 - hosts: sibbr-portal
   tags: sibbr-portal
   roles:
     - common
     - java
     - tomcat
-    # - cassandra3
     - mysql-5.7
     - postgresql
     - webserver
@@ -20,7 +19,6 @@
     - solr6
     - logger-client
     - biocache-properties
-    # - { role: biocache-db,      use_cassandra3 : true }
     - { role: biocache-service, biocache_service_version: "2.1.7" }
     - { role: biocache-hub,     biocache_hub: ala-hub, biocache_hub_version: "3.0.6" }
     - { role: collectory,       collectory_app: ala-collectory, collectory_version: "1.5.4" }
