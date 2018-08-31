@@ -156,7 +156,7 @@ sandbox_url = http://ala.sibbr.rnp.br/sandbox
 sandbox_ui_url = http://ala.sibbr.rnp.br/datacheck
 sandbox_biocache_service_url = http://ala.sibbr.rnp.br/biocache-service
 
-google_api_key = get-a-google-api-key
+google_api_key = AIzaSyAJDtEeoy7Sc9pij2TAoVnmTwA34Q-2VHk
 spatial_hub_api_key = get-an-ala-api-key
 
 tomcat_java_opts = -Xmx1g -Xms1g -Xss256k -Djava.awt.headless=true
