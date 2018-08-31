@@ -4,7 +4,7 @@
 # To use this add the following into your /etc/hosts file:
 #
 # 11.11.11.11   sibbr-postgresql
-# 12.12.12.12	sibbr-portal-espacial	ala-espacial.sibbr.rnp.br
+# 12.12.12.12	sibbr-portal-espacial	sibbr-portal-espacial.rnp.br
 #
 # You'll need to replace "11.11.11.11|12.12.12.12" with the IP address of your newly created
 # Ubuntu 16 instance. For this demo to run well, we recommend a machine of 16GB RAM, 4 CPUs.
@@ -38,9 +38,9 @@ sibbr-portal-espacial
 [geoserver:vars]
 data_dir = /data
 
-geoserver_hostname = ala-espacial.sibbr.rnp.br
-geoserver_url = http://ala-espacial.sibbr.rnp.br/geoserver
-geoserver_base_url = http://ala-espacial.sibbr.rnp.br
+geoserver_hostname = sibbr-portal-espacial.rnp.br
+geoserver_url = http://sibbr-portal-espacial.rnp.br/geoserver
+geoserver_base_url = http://sibbr-portal-espacial.rnp.br
 geoserver_context_path = /geoserver
 geoserver_app = geoserver
 
@@ -69,9 +69,9 @@ ssl = false
 [geonetwork:vars]
 data_dir = /data
 
-geonetwork_hostname = ala-espacial.sibbr.rnp.br
-geonetwork_url = http://ala-espacial.sibbr.rnp.br/geonetwork
-geonetwork_base_url = http://ala-espacial.sibbr.rnp.br
+geonetwork_hostname = sibbr-portal-espacial.rnp.br
+geonetwork_url = http://sibbr-portal-espacial.rnp.br/geonetwork
+geonetwork_base_url = http://sibbr-portal-espacial.rnp.br
 geonetwork_context_path = /geonetwork
 geonetwork_app = geonetwork
 
@@ -101,15 +101,15 @@ ssl = false
 [spatial-service:vars]
 data_dir = /data
 
-spatial_service_hostname = ala-espacial.sibbr.rnp.br
-spatial_service_url = http://ala-espacial.sibbr.rnp.br/ws
-spatial_service_base_url = http://ala-espacial.sibbr.rnp.br
+spatial_service_hostname = sibbr-portal-espacial.rnp.br
+spatial_service_url = http://sibbr-portal-espacial.rnp.br/ws
+spatial_service_base_url = http://sibbr-portal-espacial.rnp.br
 spatial_service_context_path = /ws
 
-layers_service_url = http://ala-espacial.sibbr.rnp.br/ws
+layers_service_url = http://sibbr-portal-espacial.rnp.br/ws
 biocache_service_url = http://ala.sibbr.rnp.br/biocache-service
 
-geoserver_url = http://ala-espacial.sibbr.rnp.br/geoserver
+geoserver_url = http://sibbr-portal-espacial.rnp.br/geoserver
 geoserver_username = admin
 geoserver_password = password
 
@@ -144,13 +144,13 @@ ssl = false
 [spatial-hub:vars]
 data_dir = /data
 
-spatial_hub_hostname = ala-espacial.sibbr.rnp.br
-spatial_hub_url = http://ala-espacial.sibbr.rnp.br/
-spatial_hub_base_url = http://ala-espacial.sibbr.rnp.br
+spatial_hub_hostname = sibbr-portal-espacial.rnp.br
+spatial_hub_url = http://sibbr-portal-espacial.rnp.br/
+spatial_hub_base_url = http://sibbr-portal-espacial.rnp.br
 spatial_hub_context_path = /
 
-layers_service_url = http://ala-espacial.sibbr.rnp.br/ws
-geoserver_url = http://ala-espacial.sibbr.rnp.br/geoserver
+layers_service_url = http://sibbr-portal-espacial.rnp.br/ws
+geoserver_url = http://sibbr-portal-espacial.rnp.br/geoserver
 
 sandbox_url = http://ala.sibbr.rnp.br/sandbox
 sandbox_ui_url = http://ala.sibbr.rnp.br/datacheck
