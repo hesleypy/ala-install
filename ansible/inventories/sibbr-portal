@@ -8,15 +8,15 @@
 # You'll need to replace "12.12.12.12" with the IP address of your newly created
 # Ubuntu 16 instance. For this demo to run well, we recommend a machine of 16GB RAM, 4 CPUs.
 #
-# ansible-playbook ala-hmg-br.yml -i inventories/sibbr-portal -u <USERNAME_HERE> -k -K -b
+# ansible-playbook ala-portal-hmg-br.yml -i inventories/sibbr-portal -u <USERNAME_HERE> -k -K -b
 #
 ########################################################################################################################
 
-[ala-hmg-br]
+[ala-portal-hmg-br]
 sibbr-cassandra
 sibbr-portal
 
-[ala-hmg-br:vars]
+[ala-portal-hmg-br:vars]
 # Mounted storage is usually /mnt on EC2. Create a symlink to /mnt -> /data
 data_dir=/data
 

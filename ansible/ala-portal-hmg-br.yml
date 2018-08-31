@@ -4,7 +4,6 @@
     - java
     - cassandra3
     - { role: biocache-db, use_cassandra3 : true }
-  become: yes
 
 - hosts: sibbr-portal
   tags: sibbr-portal

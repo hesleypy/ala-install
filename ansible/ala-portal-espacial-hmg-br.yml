@@ -1,0 +1,16 @@
+- hosts: sibbr-postgresql
+  tags: sibbr-postgresql
+  roles:
+    - postgresql
+
+- hosts: sibbr-portal-espacial
+  tags: sibbr-portal-espacial
+  roles:
+    - common
+    - java
+    - tomcat
+    - webserver
+    - geoserver
+    - geonetwork
+    - spatial-service
+    - spatial-hub
