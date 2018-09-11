@@ -12,7 +12,7 @@
     - java
     - tomcat
     - mysql-5.7
-    - postgresql
+    #- postgresql
     - webserver
     - nameindex
     - solr6
