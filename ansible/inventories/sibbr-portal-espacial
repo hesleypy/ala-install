@@ -131,8 +131,9 @@ spatial_service_service_key = create-shared-key
 
 spatial_service_remote_url = https://nectar-spatial-staging.ala.org.au/spatial-service
 
-auth_base_url = https://auth.ala.org.au
-auth_cas_url = https://auth.ala.org.au/cas
+security.cas.disableCAS = true
+#auth_base_url = https://auth.ala.org.au
+#auth_cas_url = https://auth.ala.org.au/cas
 
 robots_disallow_paths = ["/ws", "/geoserver"] #["/ws", "/geoserver", "/geonetwork"]
 robots_disallow_useragents = ["SemrushBot", "Mappy", "BUbiNG"]
