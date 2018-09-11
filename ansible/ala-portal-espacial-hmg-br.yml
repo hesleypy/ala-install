@@ -11,6 +11,6 @@
     - tomcat
     - webserver
     - geoserver
-    - geonetwork
+    #- geonetwork
     - spatial-service
     - spatial-hub
