@@ -21,9 +21,9 @@ sibbr-portal-espacial
 sibbr-postgresql
 sibbr-portal-espacial
 
-[geonetwork]
-sibbr-postgresql
-sibbr-portal-espacial
+#[geonetwork]
+#sibbr-postgresql
+#sibbr-portal-espacial
 
 [spatial-hub]
 sibbr-postgresql
@@ -59,42 +59,42 @@ postgresql_database = layersdb
 postgresql_username = postgres
 postgresql_password = password
 
-robots_disallow_paths = ["/ws", "/geoserver", "/geonetwork"]
+robots_disallow_paths = ["/ws", "/geoserver"] #["/ws", "/geoserver", "/geonetwork"]
 robots_disallow_useragents = ["SemrushBot", "Mappy", "BUbiNG"]
 
 ssl = false
 
 ####################################### geonetwork
 
-[geonetwork:vars]
-data_dir = /data
+#[geonetwork:vars]
+#data_dir = /data
 
-geonetwork_hostname = sibbr-portal-espacial.rnp.br
-geonetwork_url = http://sibbr-portal-espacial.rnp.br/geonetwork
-geonetwork_base_url = http://sibbr-portal-espacial.rnp.br
-geonetwork_context_path = /geonetwork
-geonetwork_app = geonetwork
+#geonetwork_hostname = sibbr-portal-espacial.rnp.br
+#geonetwork_url = http://sibbr-portal-espacial.rnp.br/geonetwork
+#geonetwork_base_url = http://sibbr-portal-espacial.rnp.br
+#geonetwork_context_path = /geonetwork
+#geonetwork_app = geonetwork
 
-geonetwork_username = admin
-geonetwork_password = password
-geonetwork_database = geonetwork
+#geonetwork_username = admin
+#geonetwork_password = password
+#geonetwork_database = geonetwork
 
-layers_db_host = sibbr-postgresql
-layers_db_port = 5432
-layers_db_name = layersdb
-layers_db_username = postgres
-layers_db_password = password
+#layers_db_host = sibbr-postgresql
+#layers_db_port = 5432
+#layers_db_name = layersdb
+#layers_db_username = postgres
+#layers_db_password = password
 
-postgresql_host = sibbr-postgresql
-postgresql_port = 5432
-postgresql_database = layersdb
-postgresql_username = postgres
-postgresql_password = password
+#postgresql_host = sibbr-postgresql
+#postgresql_port = 5432
+#postgresql_database = layersdb
+#postgresql_username = postgres
+#postgresql_password = password
 
-robots_disallow_paths = ["/ws", "/geoserver", "/geonetwork"]
-robots_disallow_useragents = ["SemrushBot", "Mappy", "BUbiNG"]
+#robots_disallow_paths = ["/ws", "/geoserver", "/geonetwork"]
+#robots_disallow_useragents = ["SemrushBot", "Mappy", "BUbiNG"]
 
-ssl = false
+#ssl = false
 
 ####################################### spatial-service
 
@@ -125,7 +125,7 @@ postgresql_database = layersdb
 postgresql_username = postgres
 postgresql_password = password
 
-spatial_service_api_key = get-me-an-api-key
+spatial_service_api_key = get-me-an-api-key #How can I do that?
 spatial_service_slave_key = create-shared-key
 spatial_service_service_key = create-shared-key
 
@@ -134,7 +134,7 @@ spatial_service_remote_url = https://nectar-spatial-staging.ala.org.au/spatial-s
 auth_base_url = https://auth.ala.org.au
 auth_cas_url = https://auth.ala.org.au/cas
 
-robots_disallow_paths = ["/ws", "/geoserver", "/geonetwork"]
+robots_disallow_paths = ["/ws", "/geoserver"] #["/ws", "/geoserver", "/geonetwork"]
 robots_disallow_useragents = ["SemrushBot", "Mappy", "BUbiNG"]
 
 ssl = false
@@ -152,16 +152,16 @@ spatial_hub_context_path = /
 layers_service_url = http://sibbr-portal-espacial.rnp.br/ws
 geoserver_url = http://sibbr-portal-espacial.rnp.br/geoserver
 
-sandbox_url = http://ala.sibbr.rnp.br/sandbox
-sandbox_ui_url = http://ala.sibbr.rnp.br/datacheck
+sandbox_url = http://ala.sibbr.rnp.br/sandbox #It is not installed I suppose.
+sandbox_ui_url = http://ala.sibbr.rnp.br/datacheck #Same above
 sandbox_biocache_service_url = http://ala.sibbr.rnp.br/biocache-service
 
 google_api_key = AIzaSyAJDtEeoy7Sc9pij2TAoVnmTwA34Q-2VHk
-spatial_hub_api_key = get-an-ala-api-key
+spatial_hub_api_key = get-an-ala-api-key #How can I do that?
 
 tomcat_java_opts = -Xmx1g -Xms1g -Xss256k -Djava.awt.headless=true
 
-robots_disallow_paths = ["/ws", "/geoserver", "/geonetwork"]
+robots_disallow_paths = ["/ws", "/geoserver"] #["/ws", "/geoserver", "/geonetwork"]
 robots_disallow_useragents = ["SemrushBot", "Mappy", "BUbiNG"]
 
 ssl = false
