@@ -67,17 +67,17 @@ caches_collections_enabled = false
 
 org_url = http://ala.sibbr.rnp.br
 
-skin_orgNameLong = Living Atlas Demo
-orgNameLong = Living Atlas Demo
-orgNameShort = Living Atlas Demo
+skin_orgNameLong = SiBBr
+orgNameLong = SiBBr
+orgNameShort = SiBBr
 
-explore_your_area_lat = 40.4168
-explore_your_area_lng = -3.7038
-explore_your_area_location = Madrid
+explore_your_area_lat = -15.7801
+explore_your_area_lng = -47.9292
+explore_your_area_location = Brasilia
 
-map_default_latitude = 40.4168
-map_default_longitude = -3.7038
-map_default_zoom = 5
+map_default_latitude = -15.7801 
+map_default_longitude = -47.9292
+map_default_zoom = 4
 
 skin_layout = generic
 skin_fluid_layout = true
@@ -132,21 +132,21 @@ api_key = to_be_added
 skin = ala
 
 # Map config
-collections_map_lat = 40.4168
-collections_map_lon = -3.7038
-collections_map_zoom = 5
+collections_map_lat = -15.7801
+collections_map_lon = -47.9292
+collections_map_zoom = 4
 
 # Project name
-orgNameShort = Living Atlas demo
-orgNameLong = Living Atlas demo
-region = Spain
+orgNameShort = SiBBr
+orgNameLong = SiBBr
+region = Brazil
 
 # EML config
-eml_delivery_point = Smith Street
-eml_city = Leipzig
-eml_admin_area = Spain
+eml_delivery_point = Esplanada dos Ministerios 
+eml_city = Brasilia
+eml_admin_area = Brazil
 eml_postal_code = S21 2SS
-eml_country = Spain
+eml_country = Brazil
 
 # Disable UI components
 disable_map = true
